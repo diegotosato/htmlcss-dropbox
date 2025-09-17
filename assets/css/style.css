@@ -5,38 +5,38 @@
     box-sizing: border-box;
 }
 
-img{
+img {
     display: block;
 }
 
-body{
+body {
     font-family: "Open Sans", sans-serif;
     min-width: 1020px;
 }
 
 
 /* debug */
-.debug *{
+.debug * {
     border: 1px dashed black;
 }
 
-header{
+header {
     height: 80px;
     background-color: red;
 }
 
-.nav{
+.nav {
     height: 100%;
     justify-content: space-between;
 }
 
-.nav-left{
+.nav-left {
     height: 100%;
     width: 500px;
     background-color: lightcoral;
 }
 
-.nav-right{
+.nav-right {
     height: 100%;
     width: 500px;
     background-color: lightcoral;
@@ -44,12 +44,54 @@ header{
 }
 
 
-main{
+main {
     height: 5000px;
     background-color: green;
 }
 
-footer{
+.jumbotron {
+    background-color: yellow;
+    height: 737px;
+    margin-bottom: 6rem;
+}
+
+.jumbo {
+    width: 100%;
+    height: 737px;
+    background-color: yellowgreen;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.jumbo-title {
+    width: 100%;
+    height: 188px;
+    background-color: darkorange;
+}
+
+.jumbo-content {
+    justify-content: space-between;
+    width: 100%;
+    height: 406px;
+    gap: 1rem;
+}
+
+.jumbo-text {
+    width: 30%;
+    height: 100%;
+    background-color: darkorange;
+}
+
+.jumbo-img {
+    width: 70%;
+    height: 100%;
+    background-color: darkorange;
+}
+
+
+
+
+footer {
     height: 570px;
     background-color: blue;
 }
@@ -57,16 +99,16 @@ footer{
 
 
 /* commons */
-.large-container{
+.large-container {
     width: 80%;
     margin: 0 auto;
 }
 
-.small-container{
+.small-container {
     width: 60%;
     margin: 0 auto;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
