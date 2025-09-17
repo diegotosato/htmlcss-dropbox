@@ -11,4 +11,26 @@ img{
 
 body{
     font-family: "Open Sans", sans-serif;
+    min-width: 1020px;
+}
+
+
+/* debug */
+.debug{
+    border: 1px dashed black;
+}
+
+header{
+    height: 80px;
+    background-color: red;
+}
+
+main{
+    height: 5000px;
+    background-color: green;
+}
+
+footer{
+    height: 570px;
+    background-color: blue;
 }
