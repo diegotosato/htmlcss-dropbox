@@ -15,6 +15,22 @@ body {
 }
 
 
+/* Utilities */
+:root{
+    /* colors */
+    --db-primary: #b4d0e6;
+    --db-secondary: #0061fe;
+    --db-darker: black;
+    --db-lighter: white;
+
+    /* font-size */
+    --h1-size: 5rem;
+    --h2-size: 2.75rem;
+    --h3-size: 1.625rem;
+    --standard-txt-size: 1.125rem;
+}
+
+
 /* debug */
 .debug * {
     border: 1px dashed black;
