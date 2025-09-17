@@ -1,115 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dropbox</title>
-        <!-- font awesome -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- Google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 
-        <!-- personal css -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
+    <!-- personal css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
-    <body class="debug">
+<body class="">
 
-        <header>
-            <div class="nav d-flex">
+    <header>
+        <!-- <div class="nav d-flex">
                 <div class="nav-left"></div>
                 <div class="nav-right"></div>
-            </div>
-        </header>
-        <!-- /header -->
+            </div> -->
+        <nav class="menu d-flex">
+            <ul class="list-unstyled d-flex">
+                <li>
+                    <img src="./assets/img/logo-small.png" alt="dropbox_logo">
+                </li>
+                <li>
+                    <a href="#">Perchè Dropbox</a>
+                </li>
+                <li>
+                    <a href="#">Funzioni</a>
+                </li>
+                <li>
+                    <a href="#">Piani e Prezzi</a>
+                </li>
+            </ul>
+            <!-- /nav left-side -->
 
-        <main>
-            <div class="jumbotron m-bottom">
-                <div class="large-container">
-                    <section class="jumbo d-flex">
-                        <div class="jumbo-title"></div>
-                        <div class="jumbo-content d-flex">
-                            <div class="jumbo-text"></div>
-                            <div class="jumbo-img"></div>
-                        </div>
-                    </section>
+            <ul class="list-unstyled d-flex">
+                <li>
+                    <a href="#">Supporto</a>
+                </li>
+                <li>
+                    <a href="#">Contatta l'ufficio vendite</a>
+                </li>
+                <li>
+                    <a href="#">Accedi</a>
+                </li>
+                <li>
+                    <a class="button" href="#">Inizia</a>
+                </li>
+            </ul>            
+        </nav>
+    </header>
+    <!-- /header -->
+
+    <main>
+        <div class="jumbotron m-bottom">
+            <div class="large-container">
+                <section class="jumbo d-flex">
+                    <div class="jumbo-title"></div>
+                    <div class="jumbo-content d-flex">
+                        <div class="jumbo-text"></div>
+                        <div class="jumbo-img"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- /.jumbotron -->
+
+        <section id="business" class="padding">
+            <div class="business-plan small-container d-flex">
+                <div class="business-title"></div>
+                <div class="business-choice"></div>
+                <div class="business-grid d-flex">
+                    <div class="business-grid-col-w33"></div>
+                    <div class="business-grid-col-w33"></div>
+                    <div class="business-grid-col-w33"></div>
+                    <div class="business-grid-col-w100"></div>
                 </div>
             </div>
-            <!-- /.jumbotron -->
+        </section>
+        <!-- /#business -->
 
-            <section id="business" class="padding">
-                <div class="business-plan small-container d-flex">
-                    <div class="business-title"></div>
-                    <div class="business-choice"></div>
-                    <div class="business-grid d-flex">
-                        <div class="business-grid-col-w33"></div>
-                        <div class="business-grid-col-w33"></div>
-                        <div class="business-grid-col-w33"></div>
-                        <div class="business-grid-col-w100"></div>
+        <section id="partner" class="padding">
+            <div class="partner small-container d-flex">
+                <div class="partner-img"></div>
+                <div class="partner-text"></div>
+            </div>
+        </section>
+        <!-- /#partner -->
+
+        <section id="operations" class="padding">
+            <div class="small-container">
+                <div class="operations d-flex">
+                    <div class="operations-title"></div>
+                    <div class="operations-grid d-flex">
+                        <div class="operations-grid-card"></div>
+                        <div class="operations-grid-card"></div>
+                        <div class="operations-grid-card"></div>
+                        <div class="operations-grid-card"></div>
+                        <div class="operations-grid-card"></div>
+                        <div class="operations-grid-card"></div>
                     </div>
                 </div>
-            </section>
-            <!-- /#business -->
-
-            <section id="partner" class="padding">
-                <div class="partner small-container d-flex">
-                    <div class="partner-img"></div>
-                    <div class="partner-text"></div>
-                </div>
-            </section>
-            <!-- /#partner -->
-
-            <section id="operations" class="padding">
-                <div class="small-container">
-                    <div class="operations d-flex">
-                        <div class="operations-title"></div>
-                        <div class="operations-grid d-flex">
-                            <div class="operations-grid-card"></div>
-                            <div class="operations-grid-card"></div>
-                            <div class="operations-grid-card"></div>
-                            <div class="operations-grid-card"></div>
-                            <div class="operations-grid-card"></div>
-                            <div class="operations-grid-card"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /#operations -->
-
-            <section id="users" class="padding">
-                <div class="small-container">
-                    <div class="users d-flex">
-                        <div class="users-title"></div>
-                        <div class="users-text"></div>
-                    </div>
-                </div>
-            </section>
-            <!-- /#users -->
-        </main>
-        <!-- /main -->
-
-        <footer>
-            <div class="footer-content large-container d-flex">
-                <div class="about d-flex">
-                    <div class="about-col"></div>
-                    <div class="about-col"></div>
-                    <div class="about-col"></div>
-                    <div class="about-col"></div>
-                    <div class="about-col"></div>
-                </div>
-                <div class="language"></div>
             </div>
-        </footer>
-        <!-- /footer -->
-    </body>
+        </section>
+        <!-- /#operations -->
+
+        <section id="users" class="padding">
+            <div class="small-container">
+                <div class="users d-flex">
+                    <div class="users-title"></div>
+                    <div class="users-text"></div>
+                </div>
+            </div>
+        </section>
+        <!-- /#users -->
+    </main>
+    <!-- /main -->
+
+    <footer>
+        <div class="footer-content large-container d-flex">
+            <div class="about d-flex">
+                <div class="about-col"></div>
+                <div class="about-col"></div>
+                <div class="about-col"></div>
+                <div class="about-col"></div>
+                <div class="about-col"></div>
+            </div>
+            <div class="language"></div>
+        </div>
+    </footer>
+    <!-- /footer -->
+</body>
 
 </html>
