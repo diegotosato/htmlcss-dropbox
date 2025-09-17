@@ -127,6 +127,20 @@ main {
     width: 100%;
     height: 1260px;
     background-color: darkorange;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.business-grid-col-w33{
+    width: 33%;
+    height: 70%;
+    background-color: orangered;
+}
+
+.business-grid-col-w100{
+    width: 100%;
+    height: 25%;
+    background-color: orangered;
 }
 
 
