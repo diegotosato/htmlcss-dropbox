@@ -8,3 +8,7 @@
 img{
     display: block;
 }
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
