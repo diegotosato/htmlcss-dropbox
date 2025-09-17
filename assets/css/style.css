@@ -30,6 +30,7 @@ body {
     --h2-size: 2.75rem;
     --h3-size: 1.625rem;
     --standard-txt-size: 1.125rem;
+    --card-txt-size: 1rem;
 }
 
 .large-container {
@@ -57,13 +58,17 @@ body {
 .button {
     color: var(--db-lighter);
     background-color: var(--db-secondary);
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     text-decoration: none;
     display: inline-block;
 
     &:hover {
         text-decoration: underline;
     }
+}
+
+.opacity {
+    opacity: 0.5;
 }
 
 /* #endregion utilities */
@@ -140,7 +145,6 @@ main {
 
 /* partner */
 .partner {
-    width: 100%;
     height: 512px;
     gap: 1rem;
     background-color: yellow;
@@ -273,7 +277,7 @@ footer {
     gap: 1.5rem;
 }
 
-a {
+header a {
     color: var(--db-darker);
 }
 
@@ -288,7 +292,7 @@ a {
 
 
 /* region main */
-.separator{
+.separator {
     width: 100%;
     height: 2px;
     background-color: var(--db-darker);
@@ -311,7 +315,7 @@ a {
     padding-bottom: 2rem;
 }
 
-.jumbo-content{
+.jumbo-content {
     position: relative;
 }
 
@@ -324,11 +328,11 @@ a {
     width: 30%;
 }
 
-.jumbo-txt .button{
+.jumbo-txt .button {
     margin: 2rem 0;
 }
 
-.jumbo-txt i{
+.jumbo-txt i {
     margin-top: 5rem;
 }
 
@@ -342,11 +346,20 @@ a {
         width: 100%;
     }
 }
+
 /* #endregion jumbotron */
 
-/* business-plan */
+/* #region #business */
+.billing {
+    display: inline-block;
+
+    span {
+        margin-right: 1rem;
+    }
+}
+
+
 .business-plan {
-    width: 100%;
     height: 1500px;
     background-color: yellow;
     align-items: flex-end;
@@ -367,21 +380,86 @@ a {
 
 .business-grid {
     width: 100%;
-    height: 1260px;
     background-color: darkorange;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.business-grid-col-w33 {
+
+
+/* #region business-cards */
+.business-card-w33 {
     width: 33%;
     height: 70%;
-    background-color: orangered;
+    background-color: var(--db-lighter);
 }
 
-.business-grid-col-w100 {
-    width: 100%;
-    height: 25%;
-    background-color: orangered;
+.card-title {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 0;
 }
+
+.card-content {
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 3rem 2rem;
+
+    strong,
+    p,
+    a,
+    i {
+        font-size: var(--card-txt-size);
+        line-height: var(--card-txt-size);
+    }
+
+    h3{
+        margin-bottom: 1.2rem;
+    }
+
+    p.opacity{
+        margin: 1rem 0;
+        padding-bottom: 2rem;
+    }
+
+    p.d-flex{
+        padding: 1rem 0;
+
+        i{
+            width: 1rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .button{
+        margin: 3rem 0;
+    }
+
+    .recap{
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+}
+
+
+.buy-link {
+    color: var(--db-secondary);
+}
+
+.card-separator {
+    width: 20%;
+    height: 2px;
+    background-color: var(--db-darker);
+    margin: 3rem 0;
+}
+
+.fa-check {
+    color: var(--db-secondary);
+}
+
+/* #endregion business-card */
+
+
+
