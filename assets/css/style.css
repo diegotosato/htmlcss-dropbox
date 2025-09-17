@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* #region CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +13,10 @@ body {
     font-family: "Open Sans", sans-serif;
     min-width: 1020px;
 }
+/* #endregion CSS Reset */
 
 
-/* Utilities */
+/* #region Utilities */
 :root {
     /* colors */
     --db-primary: #b4d0e6;
@@ -30,6 +31,32 @@ body {
     --standard-txt-size: 1.125rem;
 }
 
+.large-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.small-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.m-bottom {
+    margin-bottom: 5rem;
+}
+
+.padding {
+    padding: 5rem 0;
+}
+/* #endregion utilities */
+
+
+
+/* #region Generics */
 h1 {
     font-size: var(--h1-size);
 }
@@ -57,7 +84,7 @@ ul {
 ul li a {
     text-decoration: none;
 }
-
+/* #endregion Generics */
 
 /* debug */
 .debug * {
@@ -282,31 +309,10 @@ footer {
 
 
 
-/* commons */
-.large-container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.small-container {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.d-flex {
-    display: flex;
-}
-
-.m-bottom {
-    margin-bottom: 5rem;
-}
-
-.padding {
-    padding: 5rem 0;
-}
 
 
-/* header */
+
+/* #region header */
 
 .menu {
     justify-content: space-between;
@@ -337,3 +343,5 @@ footer {
         padding: 0.5rem 1rem;
     }
 }
+/* #endregion header */
+
