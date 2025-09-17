@@ -384,13 +384,14 @@ header a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
 }
 
 
 
 /* #region business-cards */
 .business-card-w33 {
-    width: 33%;
+    width: 30%;
     height: 70%;
     background-color: var(--db-lighter);
 }
