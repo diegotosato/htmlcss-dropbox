@@ -13,6 +13,7 @@ body {
     font-family: "Open Sans", sans-serif;
     min-width: 1020px;
 }
+
 /* #endregion CSS Reset */
 
 
@@ -32,7 +33,7 @@ body {
 }
 
 .large-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -52,6 +53,18 @@ body {
 .padding {
     padding: 5rem 0;
 }
+
+.button {
+    color: var(--db-lighter);
+    background-color: var(--db-secondary);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 /* #endregion utilities */
 
 
@@ -84,6 +97,15 @@ ul {
 ul li a {
     text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fa-arrow-down{
+    font-size: var(--h2-size);
+}
+
 /* #endregion Generics */
 
 /* debug */
@@ -108,45 +130,6 @@ main {
 
 
 
-/* jumbo */
-.jumbotron {
-    background-color: yellow;
-    height: 737px;
-}
-
-.jumbo {
-    width: 100%;
-    height: 737px;
-    background-color: yellowgreen;
-    align-items: flex-end;
-    flex-wrap: wrap;
-}
-
-.jumbo-title {
-    width: 100%;
-    height: 188px;
-    background-color: darkorange;
-}
-
-.jumbo-content {
-    justify-content: space-between;
-    width: 100%;
-    height: 406px;
-    gap: 1rem;
-    position: relative;
-}
-
-.jumbo-text {
-    width: 30%;
-    height: 100%;
-    background-color: darkorange;
-}
-
-.jumbo-img {
-    width: 70%;
-    height: 530px;
-    background-color: darkorange;
-}
 
 
 
@@ -328,20 +311,63 @@ footer {
 .list-unstyled {
     align-items: center;
     gap: 1.5rem;
-
-    a {
-        color: var(--db-darker);
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    .button {
-        color: var(--db-lighter);
-        background-color: var(--db-secondary);
-        padding: 0.5rem 1rem;
-    }
 }
+
+a {
+    color: var(--db-darker);
+}
+
 /* #endregion header */
 
+
+
+
+
+
+
+
+
+/* region main */
+
+
+
+/* jumbotron */
+.jumbotron {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    h1 {
+        position: relative;
+        font-weight: 800;
+    }
+}
+
+.jumbo-bg {
+    width: 100%;
+    height: 90%;
+    background-color: var(--db-primary);
+    position: absolute;
+}
+
+.jumbo-content {
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    position: relative;
+}
+
+.jumbo-txt {
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.jumbo-image {
+    width: 70%;
+    position: absolute;
+
+    img {
+        width: 100%;
+    }
+}
