@@ -365,10 +365,7 @@ header a {
 
 
 .business-plan {
-    height: 1500px;
     background-color: yellow;
-    align-items: flex-end;
-    flex-wrap: wrap;
 }
 
 .business-title {
@@ -385,10 +382,8 @@ header a {
 
 .business-grid {
     width: 100%;
-    background-color: darkorange;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     gap: 3rem;
 }
 
@@ -397,30 +392,33 @@ header a {
 /* #region business-cards */
 .business-card-w33 {
     width: 30%;
-    height: 70%;
     background-color: var(--db-lighter);
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .business-card-w100{
     width: 100%;
     background-color: var(--db-lighter);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
 
     p{
         margin-top: 3rem;
         width: 65%;
     }
+
+    .d-flex{
+        justify-content: space-between;
+    }
 }
 
 .card-title {
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     padding: 0.5rem 0;
 }
 
 .card-content {
-    border-right: 1px solid rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     padding: 3rem 2rem;
 
     strong,
@@ -457,11 +455,6 @@ header a {
     .recap{
         display: inline-block;
         margin-bottom: 1rem;
-    }
-
-    .d-flex{
-        align-items: center;
-        justify-content: space-between;
     }
 
     .d-flex .button,h3{
