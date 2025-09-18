@@ -133,8 +133,13 @@ header {
     z-index: 1;
     width: 100%;
     background-color: var(--db-lighter);
-
     padding: 0 1.2rem;
+
+    &:hover .dropdown {
+        display: block;
+    }
+
+
 }
 
 .menu {
@@ -529,30 +534,39 @@ footer {
 
 .dropdown {
     width: 100%;
-    height: 200px;
-    background-color: orange;
+    background-color: var(--db-lighter);
+    display: none;
+    position: absolute;
+    z-index: -1;
+    top: 4.6rem;
+    left: 0;
 }
 
 .dropdown-content {
     width: 30%;
+    margin: 0 15rem 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .dropdown-section {
-    width: 50%;
+    width: 45%;
     align-items: flex-start;
+    margin: 1.5rem 0;
 }
 
 .dd-left {
     width: 20%;
 }
 
-.dd-icon{
+.dd-icon {
     width: 80%;
     aspect-ratio: 1/1;
     border: 1px solid gray;
     border-radius: 0.5rem;
     justify-content: center;
     align-items: center;
+
     i {
         display: inline-block;
         font-size: 1.5rem;
@@ -569,5 +583,6 @@ footer {
 
     p {
         font-size: 0.8rem;
+        color: gray;
     }
 }
