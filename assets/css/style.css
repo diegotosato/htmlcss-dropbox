@@ -477,25 +477,13 @@ header a {
 /* operations */
 .operations {
     width: 100%;
-    height: 1189px;
     background-color: yellow;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-.operations-title {
-    width: 100%;
-    height: 58px;
-    background-color: darkorange;
 }
 
 .operations-grid {
-    width: 100%;
-    height: 1055px;
-    background-color: darkorange;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    row-gap: 4rem;
 }
 
 .operations-grid-card {
