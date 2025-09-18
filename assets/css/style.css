@@ -55,6 +55,10 @@ body {
     padding: 5rem 0;
 }
 
+.w-100{
+    width: 100%;
+}
+
 .button {
     color: var(--db-lighter);
     background-color: var(--db-secondary);
@@ -292,6 +296,7 @@ header a {
 
 
 /* region main */
+
 .separator {
     width: 100%;
     height: 2px;
@@ -396,6 +401,16 @@ header a {
     background-color: var(--db-lighter);
 }
 
+.business-card-w100{
+    width: 100%;
+    background-color: var(--db-lighter);
+
+    p{
+        margin-top: 3rem;
+        width: 65%;
+    }
+}
+
 .card-title {
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -436,13 +451,21 @@ header a {
 
     .button{
         margin: 3rem 0;
-        width: 100%;
         text-align: center;
     }
 
     .recap{
         display: inline-block;
         margin-bottom: 1rem;
+    }
+
+    .d-flex{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .d-flex .button,h3{
+        margin: 0;
     }
 }
 
