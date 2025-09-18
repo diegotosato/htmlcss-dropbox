@@ -144,32 +144,6 @@ main {
 
 
 
-
-
-
-/* partner */
-.partner {
-    height: 512px;
-    gap: 1rem;
-    background-color: yellow;
-}
-
-.partner-img {
-    width: 70%;
-    height: 100%;
-    background-color: darkorange;
-}
-
-.partner-text {
-    width: 30%;
-    height: 100%;
-    background-color: darkorange;
-}
-
-
-
-
-
 /* operations */
 .operations {
     width: 100%;
@@ -303,7 +277,6 @@ header a {
     background-color: var(--db-darker);
     opacity: 0.2;
     margin-top: 10rem;
-    margin-bottom: 5rem;
 }
 
 
@@ -365,7 +338,13 @@ header a {
 
 
 .business-plan {
-    background-color: yellow;
+    h2{
+        margin-bottom: 3rem;
+    }
+
+    form{
+        margin-bottom: 2rem;
+    }
 }
 
 .business-title {
@@ -480,5 +459,47 @@ header a {
 
 /* #endregion business-card */
 
+/* #endregion business */
+
+
+/* #region partner */
+.partner {
+    height: 512px;
+    justify-content: space-between;
+}
+
+.partner-img {
+    width: 60%;
+    height: 100%;
+
+    img{
+        width: 100%;
+    }
+}
+
+.partner-text {
+    width: 30%;
+    height: 100%;
+
+    h3{
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.partner-button {
+    color: var(--db-darker);
+    background-color: var(--db-lighter);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+    margin-top: 3rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+/* #endregion partner */
 
 
