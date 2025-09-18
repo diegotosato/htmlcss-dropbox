@@ -512,6 +512,10 @@ footer {
         color: var(--db-lighter);
         text-decoration: none;
         margin-top: 1rem;
+
+        &:hover {
+            text-decoration: underline solid var(--db-secondary) 2px;
+        }
     }
 }
 
@@ -540,6 +544,7 @@ footer {
     z-index: -1;
     top: 4.6rem;
     left: 0;
+    border-bottom: 2px solid var(--db-darker);
 }
 
 .dropdown-content {
