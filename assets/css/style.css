@@ -436,6 +436,8 @@ header a {
 
     .button{
         margin: 3rem 0;
+        width: 100%;
+        text-align: center;
     }
 
     .recap{
