@@ -110,10 +110,6 @@ ul li a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 .fa-arrow-down {
     font-size: var(--h2-size);
 }
@@ -137,12 +133,15 @@ header {
     z-index: 1;
     width: 100%;
     background-color: var(--db-lighter);
+    
+    padding: 0 1.2rem;
 }
 
 .menu {
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 1.2rem;
+    height: 100%;
+    
 
     img {
         cursor: pointer;
@@ -153,6 +152,22 @@ header {
 .list-unstyled {
     align-items: center;
     gap: 1.5rem;
+    height: 100%;
+
+    li>a:not(.button){
+        padding: 1.5rem 0;
+        height: 100%;
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+
+        &:hover{
+            border-bottom: 2px solid black;
+        }
+    }
+
+    #inizia{
+        padding: 0.5rem 1.5rem;
+    }
 }
 
 header a {
@@ -219,7 +234,7 @@ header a {
     }
 }
 
-#go_to_anchor{
+#go_to_anchor {
     color: var(--db-darker);
 }
 
