@@ -68,7 +68,8 @@ body {
     display: inline-block;
 
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
+        background-color: #3d87ff;
     }
 }
 
@@ -394,7 +395,8 @@ header a {
     margin-top: 3rem;
 
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
+        box-shadow: 0 0 2px 1px var(--db-secondary);
     }
 }
 
