@@ -132,54 +132,10 @@ a:hover {
 
 
 
-/* main */
-main {
-    background-color: green;
-}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer */
-footer {
-    height: 570px;
-    background-color: blue;
-}
-
-.footer-content {
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.about {
-    width: 100%;
-    height: 261px;
-    background-color: cyan;
-}
-
-.about-col {
-    width: 25%;
-}
-
-.language {
-    width: 130px;
-    height: 79px;
-    background-color: cyan;
-}
 
 
 
@@ -505,5 +461,49 @@ header a {
     }
 }
 /* #endregion users */
+
+
+/* footer */
+footer {
+    height: 570px;
+    background-color: blue;
+}
+
+.footer-content {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about {
+    width: 100%;
+    height: 261px;
+    background-color: cyan;
+}
+
+.about-col {
+    width: 25%;
+    flex-direction: column;
+
+    h3{
+        margin-bottom: 1rem;
+        color: var(--db-lighter);
+    }
+
+    a{
+        color: var(--db-lighter);
+        text-decoration: none;
+        margin-top: 1rem;
+    }
+}
+
+.language {
+    width: 130px;
+    height: 79px;
+    background-color: cyan;
+}
+
+
+
 
 
