@@ -144,35 +144,6 @@ main {
 
 
 
-/* operations */
-.operations {
-    width: 100%;
-    height: 1189px;
-    background-color: yellow;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-.operations-title {
-    width: 100%;
-    height: 58px;
-    background-color: darkorange;
-}
-
-.operations-grid {
-    width: 100%;
-    height: 1055px;
-    background-color: darkorange;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.operations-grid-card {
-    width: 30%;
-    height: 45%;
-    background-color: orangered;
-}
 
 
 
@@ -503,3 +474,39 @@ header a {
 /* #endregion partner */
 
 
+/* operations */
+.operations {
+    width: 100%;
+    height: 1189px;
+    background-color: yellow;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.operations-title {
+    width: 100%;
+    height: 58px;
+    background-color: darkorange;
+}
+
+.operations-grid {
+    width: 100%;
+    height: 1055px;
+    background-color: darkorange;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.operations-grid-card {
+    width: 30%;
+    background-color: var(--db-lighter);
+
+    img{
+        width: 100%;
+    }
+
+    h3{
+        margin-bottom: 2rem;
+    }
+}
