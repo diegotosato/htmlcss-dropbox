@@ -133,7 +133,7 @@ header {
     z-index: 1;
     width: 100%;
     background-color: var(--db-lighter);
-    
+
     padding: 0 1.2rem;
 }
 
@@ -141,7 +141,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    
+
 
     img {
         cursor: pointer;
@@ -154,18 +154,18 @@ header {
     gap: 1.5rem;
     height: 100%;
 
-    li>a:not(.button){
+    li>a:not(.button) {
         padding: 1.5rem 0;
         height: 100%;
         display: inline-block;
         border-bottom: 2px solid transparent;
 
-        &:hover{
+        &:hover {
             border-bottom: 2px solid black;
         }
     }
 
-    #inizia{
+    #inizia {
         padding: 0.5rem 1.5rem;
     }
 }
@@ -479,8 +479,8 @@ header a {
 /* #endregion users */
 
 
-
 /* #region footer */
+
 footer {
     background-color: var(--db-darker);
     padding: 5rem 0;
@@ -522,3 +522,52 @@ footer {
 }
 
 /* #endregion footer */
+
+
+
+/* #region dropdown */
+
+.dropdown {
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+}
+
+.dropdown-content {
+    width: 30%;
+}
+
+.dropdown-section {
+    width: 50%;
+    align-items: flex-start;
+}
+
+.dd-left {
+    width: 20%;
+}
+
+.dd-icon{
+    width: 80%;
+    aspect-ratio: 1/1;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    i {
+        display: inline-block;
+        font-size: 1.5rem;
+        color: var(--db-secondary);
+    }
+}
+
+.dd-right {
+    width: 80%;
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
