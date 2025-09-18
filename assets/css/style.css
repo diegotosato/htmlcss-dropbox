@@ -219,6 +219,10 @@ header a {
     }
 }
 
+#go_to_anchor{
+    color: var(--db-darker);
+}
+
 /* #endregion jumbotron */
 
 
