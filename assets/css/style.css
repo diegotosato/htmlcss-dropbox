@@ -56,7 +56,7 @@ body {
     padding: 5rem 0;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
@@ -129,6 +129,14 @@ a:hover {
 
 
 /* #region header */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--db-lighter);
+}
 
 .menu {
     justify-content: space-between;
@@ -225,11 +233,11 @@ header a {
 
 
 .business-plan {
-    h2{
+    h2 {
         margin-bottom: 3rem;
     }
 
-    form{
+    form {
         margin-bottom: 2rem;
     }
 }
@@ -250,7 +258,7 @@ header a {
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 3rem;
+    row-gap: 3rem;
 }
 
 
@@ -262,18 +270,18 @@ header a {
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.business-card-w100{
+.business-card-w100 {
     width: 100%;
     background-color: var(--db-lighter);
     border: 1px solid rgba(0, 0, 0, 0.5);
 
 
-    p{
+    p {
         margin-top: 3rem;
         width: 65%;
     }
 
-    .d-flex{
+    .d-flex {
         justify-content: space-between;
     }
 }
@@ -295,35 +303,36 @@ header a {
         line-height: var(--card-txt-size);
     }
 
-    h3{
+    h3 {
         margin-bottom: 1.2rem;
     }
 
-    p.opacity{
+    p.opacity {
         margin: 1rem 0;
         padding-bottom: 2rem;
     }
 
-    p.d-flex{
+    p.d-flex {
         padding: 1rem 0;
 
-        i{
+        i {
             width: 1rem;
             margin-right: 0.5rem;
         }
     }
 
-    .button{
+    .button {
         margin: 3rem 0;
         text-align: center;
     }
 
-    .recap{
+    .recap {
         display: inline-block;
         margin-bottom: 1rem;
     }
 
-    .d-flex .button,h3{
+    .d-flex .button,
+    h3 {
         margin: 0;
     }
 }
@@ -360,7 +369,7 @@ header a {
     width: 60%;
     height: 100%;
 
-    img{
+    img {
         width: 100%;
     }
 }
@@ -369,7 +378,7 @@ header a {
     width: 30%;
     height: 100%;
 
-    h3{
+    h3 {
         margin-top: 3rem;
         margin-bottom: 1.5rem;
     }
@@ -388,16 +397,18 @@ header a {
         text-decoration: underline;
     }
 }
+
 /* #endregion partner */
 
 
 
 /* #region operations */
-#operations{
-    h2{
+#operations {
+    h2 {
         margin-bottom: 5rem;
     }
 }
+
 .operations {
     width: 100%;
 }
@@ -412,14 +423,15 @@ header a {
     width: 30%;
     background-color: var(--db-lighter);
 
-    img{
+    img {
         width: 100%;
     }
 
-    h3{
+    h3 {
         margin-bottom: 2rem;
     }
 }
+
 /* #endregion operations */
 
 
@@ -438,10 +450,11 @@ header a {
 .users-text {
     width: 60%;
 
-    a{
+    a {
         color: var(--db-secondary);
     }
 }
+
 /* #endregion users */
 
 
@@ -464,12 +477,12 @@ footer {
 .about-col {
     flex-direction: column;
 
-    h3{
+    h3 {
         margin-bottom: 1rem;
         color: var(--db-lighter);
     }
 
-    a{
+    a {
         color: var(--db-lighter);
         text-decoration: none;
         margin-top: 1rem;
@@ -482,12 +495,9 @@ footer {
     margin-top: 8rem;
     border-top: 1px solid var(--db-lighter);
 
-    p{
+    p {
         color: var(--db-lighter);
     }
 }
+
 /* #endregion footer */
-
-
-
-
